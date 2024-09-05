@@ -17,6 +17,10 @@ function App() {
             author="Pedro Luiz"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, blanditiis nulla quas amet suscipit nisi odit doloribus nihil et deserunt dolor eum atque sequi odio quos provident ad! Aperiam, corporis."
           />
+          <Post
+            author="Pedro Luiz"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, blanditiis nulla quas amet suscipit nisi odit doloribus nihil et deserunt dolor eum atque sequi odio quos provident ad! Aperiam, corporis."
+          />
         </main>
       </div>
     </div>
