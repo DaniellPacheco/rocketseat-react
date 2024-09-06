@@ -4,6 +4,37 @@ import { Sidebar } from './components/Sidebar';
 
 import styles from "./App.module.css";
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: 'https://github.com/daniellpacheco.png',
+      name: 'Daniel Pacheco',
+      role: 'Software Engineer'
+    },
+    content: [
+      { id: 1, type: 'paragraph', content: "Fala galeraa 👋" },
+      { id: 2, type: 'paragraph', content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀" },
+      { id: 3, type: 'link', content: 'jane.design/doctorcare' }
+    ],
+    publishedAt: new Date('2024-09-03 20:00:00'),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://github.com/maykbrito.png',
+      name: 'Mayk Brito',
+      role: 'Software Engineer'
+    },
+    content: [
+      { type: 'paragraph', content: "Fala galeraa 👋" },
+      { type: 'paragraph', content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀" },
+      { type: 'link', content: 'jane.design/doctorcare' }
+    ],
+    publishedAt: new Date('2024-09-10 20:00:00'),
+  }
+]
+
 function App() {
 
   return (
@@ -13,14 +44,16 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Pedro Luiz"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, blanditiis nulla quas amet suscipit nisi odit doloribus nihil et deserunt dolor eum atque sequi odio quos provident ad! Aperiam, corporis."
-          />
-          <Post
-            author="Pedro Luiz"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, blanditiis nulla quas amet suscipit nisi odit doloribus nihil et deserunt dolor eum atque sequi odio quos provident ad! Aperiam, corporis."
-          />
+          {posts.map(post => {
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
     </div>

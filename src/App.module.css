@@ -10,3 +10,13 @@
     /* mantem o heigth dos elementos, se não irá tentar esticar */
     align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

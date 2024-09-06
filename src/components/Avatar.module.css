@@ -1,0 +1,19 @@
+.avatar {
+    /* resolver o problema da imagem espremida */
+    /* alternativa 1 - usar box sizing */
+    box-sizing: initial;
+    /* alternativa 2 - fazer um calculo no width do avatar mais o width das bordas */
+    /*  lembre-se que as bordas doma dos 2 lados */
+    /* 3rem é o width do avatar, 12px é a soma das bordas */
+    /* width: calc(3rem + 12px); */
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.avatarWithBorder {
+    box-sizing: initial;
+    height: 3rem;
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
