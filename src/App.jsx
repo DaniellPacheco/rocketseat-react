@@ -13,9 +13,9 @@ const posts = [
       role: 'Software Engineer'
     },
     content: [
-      { id: 1, type: 'paragraph', content: "Fala galeraa 👋" },
-      { id: 2, type: 'paragraph', content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀" },
-      { id: 3, type: 'link', content: 'jane.design/doctorcare' }
+      { type: 'paragraph', content: "Fala galeraa 👋" },
+      { type: 'paragraph', content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀" },
+      { type: 'link', content: 'jane.design/doctorcare' }
     ],
     publishedAt: new Date('2024-09-03 20:00:00'),
   },
